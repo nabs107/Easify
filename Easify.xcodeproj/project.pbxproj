@@ -13,6 +13,9 @@
 		8CBB332323793992006ADAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBB332123793992006ADAAE /* Main.storyboard */; };
 		8CBB332523793996006ADAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBB332423793996006ADAAE /* Assets.xcassets */; };
 		8CBB332823793996006ADAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBB332623793996006ADAAE /* LaunchScreen.storyboard */; };
+		8CBB333023794617006ADAAE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB332E23794617006ADAAE /* UIView+Extensions.swift */; };
+		8CBB333123794617006ADAAE /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */; };
+		8CBB333323794625006ADAAE /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB333223794625006ADAAE /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8CBB332423793996006ADAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CBB332723793996006ADAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CBB332923793996006ADAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CBB332E23794617006ADAAE /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		8CBB333223794625006ADAAE /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		8CBAAFEE2379384F00A695B6 /* Easify */ = {
 			isa = PBXGroup;
 			children = (
+				8CBB332D2379460D006ADAAE /* Extensions */,
 				8CBAAFEF2379384F00A695B6 /* Easify.h */,
 				8CBAAFF02379384F00A695B6 /* Info.plist */,
 			);
@@ -84,6 +91,16 @@
 				8CBB332923793996006ADAAE /* Info.plist */,
 			);
 			path = EasifyExamples;
+			sourceTree = "<group>";
+		};
+		8CBB332D2379460D006ADAAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CBB333223794625006ADAAE /* DatePickerViewController.swift */,
+				8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */,
+				8CBB332E23794617006ADAAE /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +164,7 @@
 				TargetAttributes = {
 					8CBAAFEB2379384F00A695B6 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1030;
 					};
 					8CBB331A23793992006ADAAE = {
 						CreatedOnToolsVersion = 10.3;
@@ -197,6 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBB333123794617006ADAAE /* UIAlertController+Extensions.swift in Sources */,
+				8CBB333023794617006ADAAE /* UIView+Extensions.swift in Sources */,
+				8CBB333323794625006ADAAE /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +375,7 @@
 		8CBAAFF52379384F00A695B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X8YE27GARE;
@@ -362,6 +384,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Easify/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Easify;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,6 +402,7 @@
 		8CBAAFF62379384F00A695B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X8YE27GARE;
@@ -386,6 +411,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Easify/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
