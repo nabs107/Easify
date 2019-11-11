@@ -1,0 +1,23 @@
+PODS:
+  - Easify (1.0.0)
+  - LBTATools (1.0.12)
+
+DEPENDENCIES:
+  - Easify (from `/Users/me/Desktop/demo/Easify`)
+  - LBTATools
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LBTATools
+
+EXTERNAL SOURCES:
+  Easify:
+    :path: "/Users/me/Desktop/demo/Easify"
+
+SPEC CHECKSUMS:
+  Easify: a1a69593caf7e1e9ef2800668de6346572d11ddf
+  LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
+
+PODFILE CHECKSUM: 98873d05b64e14e8bed4c5dc88a52c618b11218e
+
+COCOAPODS: 1.7.2

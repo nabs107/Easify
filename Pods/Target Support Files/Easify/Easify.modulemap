@@ -1,0 +1,6 @@
+framework module Easify {
+  umbrella header "Easify-umbrella.h"
+
+  export *
+  module * { export * }
+}

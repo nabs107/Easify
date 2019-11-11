@@ -1,0 +1,6 @@
+framework module Pods_EasifyExamples {
+  umbrella header "Pods-EasifyExamples-umbrella.h"
+
+  export *
+  module * { export * }
+}
