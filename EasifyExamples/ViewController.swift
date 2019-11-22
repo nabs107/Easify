@@ -15,14 +15,20 @@ class ViewController: UIViewController {
     
     let fromDateBtn = UIButton(title: "From Date", titleColor: UIColor.white, font: .boldSystemFont(ofSize: 16), backgroundColor: .purple, target: self, action: #selector(fromDateTapped))
     let toDateBtn = UIButton(title: "To Date", titleColor: UIColor.white, font: .boldSystemFont(ofSize: 16), backgroundColor: .magenta, target: self, action: #selector(toDateTapped))
-    let selectedDateLabel = UILabel(text: "Selected Date", textColor: .white)
+    let baseGenericForm = UIButton(title: "Base Generic Form", titleColor: UIColor.white, font: .boldSystemFont(ofSize: 16), backgroundColor: .brown, target: self, action: #selector(baseGenericFormTapped))
+    let selectedDateLabel = UILabel(text: "Selected Date", textColor: .black)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .green
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-        self.view.stack(UIView(), fromDateBtn.withHeight(50), toDateBtn.withHeight(50), self.view.stack(selectedDateLabel.withWidth(self.view.width).withHeight(40), alignment: .center), UIView(backgroundColor: .gray).withHeight((self.view.height / 2) - 50))
+        let fromAndToDateView = UIView()
+        
+        self.view.stack(UIView(backgroundColor: .blue), fromAndToDateView.hstack(fromDateBtn.withWidth(self.view.width / 2 - 32).withHeight(50), toDateBtn.withWidth(self.view.width / 2 - 32).withHeight(50), spacing: 10, distribution: .fill), selectedDateLabel.withHeight(40), UIView(backgroundColor: .gray).withHeight((self.view.height / 2) - 50), alignment: .center)
+        
+        self.fromDateBtn.layer.cornerRadius = 10
+        self.toDateBtn.layer.cornerRadius = 10
     }
 
     @objc
@@ -39,6 +45,11 @@ class ViewController: UIViewController {
             self.selectedDateLabel.text = date.dateString(ofStyle: .long)
         }
     }
+    
+    @objc
+    func baseGenericFormTapped() {
+        
+    }
 
 }
 struct MainProvider: PreviewProvider {
@@ -48,7 +59,7 @@ struct MainProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         func makeUIViewController(context: UIViewControllerRepresentableContext<MainProvider.ContainerView>) -> UIViewController {
-            return UINavigationController(rootViewController: ViewController())
+            return ViewController()
         }
         
         func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<MainProvider.ContainerView>) {

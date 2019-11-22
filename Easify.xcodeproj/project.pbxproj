@@ -12,6 +12,13 @@
 		8C005B872379597800AD19B4 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C005B862379597800AD19B4 /* UIViewController+Extensions.swift */; };
 		8C005B892379684300AD19B4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C005B882379684300AD19B4 /* Date+Extension.swift */; };
 		8C005B8B2379684A00AD19B4 /* Locale+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C005B8A2379684A00AD19B4 /* Locale+Extensions.swift */; };
+		8C0ECB4E23829273005DC290 /* BaseGenericForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ECB4D23829273005DC290 /* BaseGenericForm.swift */; };
+		8C0ECB502382935A005DC290 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ECB4F2382935A005DC290 /* FormData.swift */; };
+		8C0ECB522382955D005DC290 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ECB512382955D005DC290 /* FormField.swift */; };
+		8C0ECB54238295B7005DC290 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ECB53238295B7005DC290 /* Option.swift */; };
+		8C23D226238369870098619E /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23D225238369870098619E /* SkyFloatingLabelTextField.swift */; };
+		8C23D2282383699D0098619E /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23D2272383699D0098619E /* UITextField+fixCaretPosition.swift */; };
+		8C23D22A23836CF70098619E /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23D22923836CF70098619E /* MKTextField.swift */; };
 		8CBAAFF12379384F00A695B6 /* Easify.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBAAFEF2379384F00A695B6 /* Easify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CBB331E23793992006ADAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB331D23793992006ADAAE /* AppDelegate.swift */; };
 		8CBB332023793992006ADAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB331F23793992006ADAAE /* ViewController.swift */; };
@@ -29,6 +36,13 @@
 		8C005B862379597800AD19B4 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		8C005B882379684300AD19B4 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		8C005B8A2379684A00AD19B4 /* Locale+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Extensions.swift"; sourceTree = "<group>"; };
+		8C0ECB4D23829273005DC290 /* BaseGenericForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGenericForm.swift; sourceTree = "<group>"; };
+		8C0ECB4F2382935A005DC290 /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		8C0ECB512382955D005DC290 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		8C0ECB53238295B7005DC290 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		8C23D225238369870098619E /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		8C23D2272383699D0098619E /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		8C23D22923836CF70098619E /* MKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
 		8CBAAFEC2379384F00A695B6 /* Easify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Easify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBAAFEF2379384F00A695B6 /* Easify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Easify.h; sourceTree = "<group>"; };
 		8CBAAFF02379384F00A695B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C0ECB4C2382920E005DC290 /* BaseGenericForm */ = {
+			isa = PBXGroup;
+			children = (
+				8C23D2272383699D0098619E /* UITextField+fixCaretPosition.swift */,
+				8C23D225238369870098619E /* SkyFloatingLabelTextField.swift */,
+				8C0ECB4D23829273005DC290 /* BaseGenericForm.swift */,
+				8C0ECB4F2382935A005DC290 /* FormData.swift */,
+				8C0ECB512382955D005DC290 /* FormField.swift */,
+				8C0ECB53238295B7005DC290 /* Option.swift */,
+				8C23D22923836CF70098619E /* MKTextField.swift */,
+			);
+			path = BaseGenericForm;
+			sourceTree = "<group>";
+		};
 		8CBAAFE22379384F00A695B6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +127,7 @@
 		8CBB331C23793992006ADAAE /* EasifyExamples */ = {
 			isa = PBXGroup;
 			children = (
+				8C0ECB4C2382920E005DC290 /* BaseGenericForm */,
 				8CBB331D23793992006ADAAE /* AppDelegate.swift */,
 				8CBB331F23793992006ADAAE /* ViewController.swift */,
 				8CBB332423793996006ADAAE /* Assets.xcassets */,
@@ -332,8 +361,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C23D22A23836CF70098619E /* MKTextField.swift in Sources */,
+				8C0ECB522382955D005DC290 /* FormField.swift in Sources */,
 				8CBB332023793992006ADAAE /* ViewController.swift in Sources */,
+				8C23D2282383699D0098619E /* UITextField+fixCaretPosition.swift in Sources */,
+				8C0ECB4E23829273005DC290 /* BaseGenericForm.swift in Sources */,
 				8CBB331E23793992006ADAAE /* AppDelegate.swift in Sources */,
+				8C0ECB54238295B7005DC290 /* Option.swift in Sources */,
+				8C23D226238369870098619E /* SkyFloatingLabelTextField.swift in Sources */,
+				8C0ECB502382935A005DC290 /* FormData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

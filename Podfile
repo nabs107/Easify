@@ -12,6 +12,8 @@ end
 target 'EasifyExamples' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'RxSwift'
+  pod 'HandyJSON'
 
   # Pods for EasifyExamples
   pod 'LBTATools'

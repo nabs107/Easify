@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-EasifyExamples/Pods-EasifyExamples-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Easify/Easify.framework
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
 ${BUILT_PRODUCTS_DIR}/LBTATools/LBTATools.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
