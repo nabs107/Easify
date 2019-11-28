@@ -15,7 +15,7 @@ extension UIAlertController {
 }
 
 final class PickerViewViewController: UIViewController {
-    public typealias Values = [[Option]]
+    public typealias Values = [[ListOption]]
     public typealias Index = (column: Int, row: Int)
     public typealias Action = (_ vc: UIViewController, _ picker: UIPickerView, _ index: Index, _ values: Values) -> ()
     
