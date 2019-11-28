@@ -17,5 +17,15 @@ public extension UIViewController {
         alert.addAction(title: "Done", style: .cancel)
         alert.show(in: self)
     }
+    
+    func showListPicker(title: String? = nil, message: String? = nil, pickerViewValues: [[String]], completion: @escaping (String) -> Void) {
+        let alert = UIAlertController(style: .actionSheet, title: title, message: message)
+        let pickerViewSelectedValue: PickerViewViewController.Index = (column: 0, row: 0)
+        alert.addPickerView(values: pickerViewValues, initialSelection: pickerViewSelectedValue) { vc, picker, index, values in
+                print(values[index.column][index.row])
+        }
+        alert.addAction(title: "Done", style: .cancel)
+        alert.show(in: self)
+    }
 
 }
