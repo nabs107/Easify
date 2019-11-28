@@ -12,7 +12,7 @@ public struct ListOption {
     public var name: String
     public var id: String
     
-    init(name: String, id: String) {
+    public init(name: String, id: String) {
         self.name = name
         self.id = id
     }

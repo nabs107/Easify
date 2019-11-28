@@ -87,7 +87,7 @@ extension PickerViewViewController: UIPickerViewDataSource, UIPickerViewDelegate
     // for the view versions, we cache any hidden and thus unused views and pass them back for reuse.
     // If you return back a different object, the old one will be released. the view will be centered in the row rect
     public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return values[component][row].label
+        return values[component][row].name
     }
     /*
      public func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
