@@ -17,7 +17,7 @@ extension UIAlertController {
 final class PickerViewViewController: UIViewController {
     public typealias Values = [[ListOption]]
     public typealias Index = (column: Int, row: Int)
-    public typealias Action = (_ vc: UIViewController, _ picker: UIPickerView, _ index: Index, _ values: Values) -> ()
+    public typealias Action = (_ vc: UIViewController, _ picker: UIPickerView, _ index: Index, _ values: ListOption) -> ()
     
     fileprivate var action: Action?
     fileprivate var values: Values = [[]]
@@ -100,7 +100,7 @@ extension PickerViewViewController: UIPickerViewDataSource, UIPickerViewDelegate
      }
      */
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        action?(self, pickerView, Index(column: component, row: row), values)
+        action?(self, pickerView, Index(column: component, row: row), values[component][row])
     }
 }
 
