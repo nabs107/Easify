@@ -15,8 +15,7 @@ extension UIAlertController {
 }
 
 final class PickerViewViewController: UIViewController {
-    
-    public typealias Values = [[String]]
+    public typealias Values = [[Option]]
     public typealias Index = (column: Int, row: Int)
     public typealias Action = (_ vc: UIViewController, _ picker: UIPickerView, _ index: Index, _ values: Values) -> ()
     
@@ -88,7 +87,7 @@ extension PickerViewViewController: UIPickerViewDataSource, UIPickerViewDelegate
     // for the view versions, we cache any hidden and thus unused views and pass them back for reuse.
     // If you return back a different object, the old one will be released. the view will be centered in the row rect
     public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return values[component][row]
+        return values[component][row].label
     }
     /*
      public func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
