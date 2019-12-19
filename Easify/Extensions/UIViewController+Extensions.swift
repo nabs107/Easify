@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIViewController {
-    func showDatePicker(title: String? = nil, message: String? = nil, defaultDate: Date? = nil, completion: @escaping (Date) -> Void) {
+    func showDatePicker(title: String? = nil, message: String? = nil, defaultDate: Date? = nil, minimumDate: Date? = nil, maximumDate: Date? = nil, completion: @escaping (Date) -> Void) {
         let alert = UIAlertController(style: .actionSheet, title: title, message: message)
         alert.addDatePicker(mode: .date, date: defaultDate ?? Date(), minimumDate: nil, maximumDate: nil) { date in
             completion(date)
