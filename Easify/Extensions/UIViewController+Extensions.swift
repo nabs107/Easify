@@ -27,5 +27,17 @@ public extension UIViewController {
         alert.addAction(title: "Done", style: .cancel)
         alert.show(in: self)
     }
+    
+    func showNepaliDatePicker(title: String? = nil, message: String? = nil, completion: @escaping (NepaliDate, Date?) -> Void) {
+        let alert = UIAlertController(style: .actionSheet, title: "Date Picker", message: "Select Date")
+//        alert.addDatePicker(mode: .date, date: Date(), minimumDate: nil, maximumDate: nil) { date in
+//            print(date)
+//        }
+        alert.addNepaliDatePicker {
+            completion($0, $1)
+        }
+        alert.addAction(title: "Done", style: .cancel)
+        alert.show(in: self)
+    }
 
 }

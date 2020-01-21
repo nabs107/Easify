@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftUI
+//import SwiftUI
 import LBTATools
 
 open class BaseGenericForm: LBTAFormController {
@@ -92,17 +92,17 @@ open class BaseGenericForm: LBTAFormController {
         formContainerStackView.withMargins(.allSides(16))
     }
 }
-struct BaseGenericFormProvider: PreviewProvider {
-    static var previews: some View {
-        return ContainerView()
-    }
-    struct ContainerView: UIViewControllerRepresentable {
-        func makeUIViewController(context: UIViewControllerRepresentableContext<BaseGenericFormProvider.ContainerView>) -> BaseGenericForm {
-            return BaseGenericForm()
-        }
-        
-        func updateUIViewController(_ uiViewController: BaseGenericForm, context: UIViewControllerRepresentableContext<BaseGenericFormProvider.ContainerView>) {
-            
-        }
-    }
-}
+//struct BaseGenericFormProvider: PreviewProvider {
+//    static var previews: some View {
+//        return ContainerView()
+//    }
+//    struct ContainerView: UIViewControllerRepresentable {
+//        func makeUIViewController(context: UIViewControllerRepresentableContext<BaseGenericFormProvider.ContainerView>) -> BaseGenericForm {
+//            return BaseGenericForm()
+//        }
+//        
+//        func updateUIViewController(_ uiViewController: BaseGenericForm, context: UIViewControllerRepresentableContext<BaseGenericFormProvider.ContainerView>) {
+//            
+//        }
+//    }
+//}

@@ -22,6 +22,9 @@
 		8C23D2282383699D0098619E /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23D2272383699D0098619E /* UITextField+fixCaretPosition.swift */; };
 		8C23D22A23836CF70098619E /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23D22923836CF70098619E /* MKTextField.swift */; };
 		8CBAAFF12379384F00A695B6 /* Easify.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBAAFEF2379384F00A695B6 /* Easify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CBB157F23D6A33A00936828 /* NepaliDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB157D23D6A33A00936828 /* NepaliDatePicker.swift */; };
+		8CBB158023D6A33A00936828 /* DateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB157E23D6A33A00936828 /* DateDataSource.swift */; };
+		8CBB158223D6A38700936828 /* NepaliDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB158123D6A38700936828 /* NepaliDatePickerViewController.swift */; };
 		8CBB331E23793992006ADAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB331D23793992006ADAAE /* AppDelegate.swift */; };
 		8CBB332023793992006ADAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB331F23793992006ADAAE /* ViewController.swift */; };
 		8CBB332523793996006ADAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBB332423793996006ADAAE /* Assets.xcassets */; };
@@ -29,6 +32,7 @@
 		8CBB333023794617006ADAAE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB332E23794617006ADAAE /* UIView+Extensions.swift */; };
 		8CBB333123794617006ADAAE /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */; };
 		8CBB333323794625006ADAAE /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB333223794625006ADAAE /* DatePickerViewController.swift */; };
+		8CF0A51B23D6B97D00BF92E4 /* NepaliDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF0A51A23D6B97D00BF92E4 /* NepaliDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,9 @@
 		8CBAAFEC2379384F00A695B6 /* Easify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Easify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBAAFEF2379384F00A695B6 /* Easify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Easify.h; sourceTree = "<group>"; };
 		8CBAAFF02379384F00A695B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CBB157D23D6A33A00936828 /* NepaliDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NepaliDatePicker.swift; sourceTree = "<group>"; };
+		8CBB157E23D6A33A00936828 /* DateDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateDataSource.swift; sourceTree = "<group>"; };
+		8CBB158123D6A38700936828 /* NepaliDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NepaliDatePickerViewController.swift; sourceTree = "<group>"; };
 		8CBB331B23793992006ADAAE /* EasifyExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasifyExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBB331D23793992006ADAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CBB331F23793992006ADAAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +66,7 @@
 		8CBB332E23794617006ADAAE /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		8CBB333223794625006ADAAE /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		8CF0A51A23D6B97D00BF92E4 /* NepaliDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NepaliDate.swift; sourceTree = "<group>"; };
 		92292B8BDC7CEC3197B28527 /* Pods-EasifyExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyExamples.debug.xcconfig"; path = "Target Support Files/Pods-EasifyExamples/Pods-EasifyExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		C3EB40F0493814AAE0D88359 /* Pods-Easify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.release.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.release.xcconfig"; sourceTree = "<group>"; };
 		D542B1333B6C908C7C05BE5A /* Pods-EasifyExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyExamples.release.xcconfig"; path = "Target Support Files/Pods-EasifyExamples/Pods-EasifyExamples.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,11 +129,23 @@
 		8CBAAFEE2379384F00A695B6 /* Easify */ = {
 			isa = PBXGroup;
 			children = (
+				8CBB157C23D6A30700936828 /* NepaliDatePicker */,
 				8CBB332D2379460D006ADAAE /* Extensions */,
 				8CBAAFEF2379384F00A695B6 /* Easify.h */,
 				8CBAAFF02379384F00A695B6 /* Info.plist */,
 			);
 			path = Easify;
+			sourceTree = "<group>";
+		};
+		8CBB157C23D6A30700936828 /* NepaliDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8CF0A51923D6B97300BF92E4 /* Model */,
+				8CBB157E23D6A33A00936828 /* DateDataSource.swift */,
+				8CBB157D23D6A33A00936828 /* NepaliDatePicker.swift */,
+				8CBB158123D6A38700936828 /* NepaliDatePickerViewController.swift */,
+			);
+			path = NepaliDatePicker;
 			sourceTree = "<group>";
 		};
 		8CBB331C23793992006ADAAE /* EasifyExamples */ = {
@@ -154,6 +174,14 @@
 				8C005B862379597800AD19B4 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8CF0A51923D6B97300BF92E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CF0A51A23D6B97D00BF92E4 /* NepaliDate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D1EA4624C04C0E26E2778067 /* Frameworks */ = {
@@ -355,11 +383,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C19839A238FE8BB0017B166 /* ListOption.swift in Sources */,
+				8CBB157F23D6A33A00936828 /* NepaliDatePicker.swift in Sources */,
+				8CF0A51B23D6B97D00BF92E4 /* NepaliDate.swift in Sources */,
 				8C005B892379684300AD19B4 /* Date+Extension.swift in Sources */,
 				8C005B872379597800AD19B4 /* UIViewController+Extensions.swift in Sources */,
+				8CBB158023D6A33A00936828 /* DateDataSource.swift in Sources */,
 				8CBB333123794617006ADAAE /* UIAlertController+Extensions.swift in Sources */,
 				8CBB333023794617006ADAAE /* UIView+Extensions.swift in Sources */,
 				8CBB333323794625006ADAAE /* DatePickerViewController.swift in Sources */,
+				8CBB158223D6A38700936828 /* NepaliDatePickerViewController.swift in Sources */,
 				8C005B8B2379684A00AD19B4 /* Locale+Extensions.swift in Sources */,
 				8C198396238FCC970017B166 /* PickerViewViewController.swift in Sources */,
 			);
@@ -579,7 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8YE27GARE;
 				INFOPLIST_FILE = EasifyExamples/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,7 +632,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8YE27GARE;
 				INFOPLIST_FILE = EasifyExamples/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftUI
+//import SwiftUI
 import Easify
 import LBTATools
 
@@ -41,8 +41,11 @@ class ViewController: UIViewController {
     
     @objc
     func toDateTapped() {
-        self.showDatePicker(title: "To Date") { (date) in
-            self.selectedDateLabel.text = date.dateString(ofStyle: .long)
+//        self.showDatePicker(title: "To Date") { (date) in
+//            self.selectedDateLabel.text = date.dateString(ofStyle: .long)
+//        }
+        self.showNepaliDatePicker(title: "Select Date", message: nil) {
+            print("\($0)/\($1)")
         }
     }
     
@@ -52,18 +55,18 @@ class ViewController: UIViewController {
     }
 
 }
-struct MainProvider: PreviewProvider {
-    static var previews: some View {
-        return ContainerView().edgesIgnoringSafeArea(.all)
-    }
-    
-    struct ContainerView: UIViewControllerRepresentable {
-        func makeUIViewController(context: UIViewControllerRepresentableContext<MainProvider.ContainerView>) -> UIViewController {
-            return ViewController()
-        }
-        
-        func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<MainProvider.ContainerView>) {
-            
-        }
-    }
-}
+//struct MainProvider: PreviewProvider {
+//    static var previews: some View {
+//        return ContainerView().edgesIgnoringSafeArea(.all)
+//    }
+//
+//    struct ContainerView: UIViewControllerRepresentable {
+//        func makeUIViewController(context: UIViewControllerRepresentableContext<MainProvider.ContainerView>) -> UIViewController {
+//            return ViewController()
+//        }
+//
+//        func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<MainProvider.ContainerView>) {
+//
+//        }
+//    }
+//}

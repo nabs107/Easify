@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Easify"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.swift_version = '5.0'
   spec.summary      = "Easify is collection of important tools."
 

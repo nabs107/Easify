@@ -15,6 +15,11 @@ extension UIAlertController {
         let datePicker = DatePickerViewController(mode: mode, date: date, minimumDate: minimumDate, maximumDate: maximumDate, action: action)
         set(vc: datePicker, height: 217)
     }
+    
+    func addNepaliDatePicker(action: SelectedDate?) {
+        let datePicker = NepaliDatePickerViewController(action: action)
+        set(vc: datePicker, height: 217)
+    }
 }
 
 final class DatePickerViewController: UIViewController {
