@@ -9,9 +9,9 @@
 import Foundation
 
 public struct NepaliDate {
-    var year: String
-    var month: String
-    var day: String
+    public let year: String
+    public let month: String
+    public let day: String
     
     init(year: String, month: String, day: String) {
         self.year = year
