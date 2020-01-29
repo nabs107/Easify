@@ -209,8 +209,10 @@ class DateDataSource {
         ]
     }
     
+    public static let digits = ["०", "१", "२", "३", "४", "५", "६", "७","८", "९"]
+    
     public static func getMonths() -> [String] {
-        return ["Baisakh", "Jestha", "Ashad", "Shrawan", "Bhadra", "Ashoj", "Kartik", "Mangsir", "Poush", "Magh", "Falgun", "Chaitra"]
+        return ["बैशाख", "जेष्ठ", "अषाढ", "श्रावण", "भाद्र", "असोज", "कात्तिक", "मंसिर", "पौष", "माघ", "फाल्गुन", "चैत्र"]
     }
     
     static func calculateDateDifference(fromDate: Date, toDate: Date) -> Int {

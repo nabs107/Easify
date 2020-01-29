@@ -1,5 +1,5 @@
 PODS:
-  - Easify (1.0.0)
+  - Easify (1.0.1)
   - HandyJSON (5.0.1)
   - LBTATools (1.0.12)
   - RxSwift (5.0.1)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "/Users/me/Desktop/demo/Easify"
 
 SPEC CHECKSUMS:
-  Easify: a1a69593caf7e1e9ef2800668de6346572d11ddf
+  Easify: 3ae161571c21aa6bb81a522d6141ee6f0a25e04d
   HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
   LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4

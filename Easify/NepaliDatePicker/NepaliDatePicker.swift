@@ -21,6 +21,16 @@ class NepaliDatePicker: UIView {
     private final let currentYearInEnglish = Calendar.current.component(.year, from: Date())
     private final let yearData: [Int] = Array(DateDataSource.getSource().keys).sorted()
     private final let daysData: [Int] = Array(1...32)
+    private final var nepaliDaysData: [String] {
+        return Array(1...32).map({ (value) -> String in
+            getNumber(number: value)
+        })
+    }
+    private final var nepaliYearData: [String] {
+        return Array(DateDataSource.getSource().keys).sorted().map({ (value) -> String in
+            getNumber(number: value)
+        })
+    }
     
     private var selectedYear: Int?
     private var selectedMonth: Int?
@@ -85,11 +95,13 @@ extension NepaliDatePicker: UIPickerViewDelegate, UIPickerViewDataSource {
     
     public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
-            return String(self.yearData[row])
+//            return String(self.yearData[row])
+            return nepaliYearData[row]
         } else if component == 1 {
             return DateDataSource.getMonths()[row]
         } else {
-            return Array(1...32)[row].description
+//            return Array(1...32)[row].description
+            return self.nepaliDaysData[row]
         }
     }
     
@@ -155,4 +167,20 @@ extension NepaliDatePicker: UIPickerViewDelegate, UIPickerViewDataSource {
         return isLeapYear
     }
     
+    public func getNumber(number: Int) -> String {
+        
+        let numberStr = "\(number)"
+        
+        let nepaliStrArr = numberStr.map { (char) -> String in
+            
+            let charStr = "\(char)"
+            if let index = Int(charStr) {
+                return DateDataSource.digits[index]
+            } else {
+                return charStr
+            }
+        }
+        
+        return nepaliStrArr.joined()
+    }
 }
