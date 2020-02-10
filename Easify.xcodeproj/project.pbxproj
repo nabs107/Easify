@@ -33,6 +33,7 @@
 		8CBB333123794617006ADAAE /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */; };
 		8CBB333323794625006ADAAE /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB333223794625006ADAAE /* DatePickerViewController.swift */; };
 		8CC6B41F23F17755004B7F7C /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6B41E23F17755004B7F7C /* DateConverter.swift */; };
+		8CC6B42123F17E5E004B7F7C /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6B42023F17E5E004B7F7C /* Int+Extensions.swift */; };
 		8CF0A51B23D6B97D00BF92E4 /* NepaliDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF0A51A23D6B97D00BF92E4 /* NepaliDate.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		8CBB333223794625006ADAAE /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		8CC6B41E23F17755004B7F7C /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
+		8CC6B42023F17E5E004B7F7C /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		8CF0A51A23D6B97D00BF92E4 /* NepaliDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NepaliDate.swift; sourceTree = "<group>"; };
 		92292B8BDC7CEC3197B28527 /* Pods-EasifyExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyExamples.debug.xcconfig"; path = "Target Support Files/Pods-EasifyExamples/Pods-EasifyExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		C3EB40F0493814AAE0D88359 /* Pods-Easify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.release.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				8CBB332F23794617006ADAAE /* UIAlertController+Extensions.swift */,
 				8CBB332E23794617006ADAAE /* UIView+Extensions.swift */,
 				8C005B862379597800AD19B4 /* UIViewController+Extensions.swift */,
+				8CC6B42023F17E5E004B7F7C /* Int+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				8C005B872379597800AD19B4 /* UIViewController+Extensions.swift in Sources */,
 				8CBB158023D6A33A00936828 /* DateDataSource.swift in Sources */,
 				8CBB333123794617006ADAAE /* UIAlertController+Extensions.swift in Sources */,
+				8CC6B42123F17E5E004B7F7C /* Int+Extensions.swift in Sources */,
 				8CBB333023794617006ADAAE /* UIView+Extensions.swift in Sources */,
 				8CBB333323794625006ADAAE /* DatePickerViewController.swift in Sources */,
 				8CBB158223D6A38700936828 /* NepaliDatePickerViewController.swift in Sources */,
