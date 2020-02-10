@@ -1,5 +1,5 @@
 //
-//  Int+Extensions.swift
+//  String+Extensions.swift
 //  Easify
 //
 //  Created by Nabin Shrestha on 2/10/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Int {
+public extension String {
     func unicoded() -> String {
         let numberStr = "\(self)"
         

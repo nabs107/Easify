@@ -51,6 +51,8 @@ class ViewController: UIViewController {
 //        print(DateConverter().getNepaliDate(englishDate: DateModel(year: Date().year, month: Date().month, day: Date().day)))
         
         print(Int(2075).unicoded())
+        
+        print("2075".unicoded())
     }
     
     @objc
