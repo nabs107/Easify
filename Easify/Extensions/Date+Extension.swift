@@ -152,7 +152,7 @@ public extension Date {
     }
     
     /// Nearest quarter to date.
-    public var nearestHourQuarter: Date {
+    var nearestHourQuarter: Date {
         var components = Calendar.current.dateComponents([.year, .month , .day , .hour , .minute], from: self)
         guard let min = components.minute else {
             return self
@@ -166,7 +166,7 @@ public extension Date {
     }
     
     /// Nearest half hour to date.
-    public var nearestHalfHour: Date {
+    var nearestHalfHour: Date {
         var components = Calendar.current.dateComponents([.year, .month , .day , .hour , .minute], from: self)
         guard let min = components.minute else {
             return self
@@ -180,12 +180,12 @@ public extension Date {
     }
     
     /// Time zone used by system.
-    public var timeZone: TimeZone {
+    var timeZone: TimeZone {
         return self.calendar.timeZone
     }
     
     /// UNIX timestamp from date.
-    public var unixTimestamp: Double {
+    var unixTimestamp: Double {
         return timeIntervalSince1970
     }
     
@@ -200,7 +200,7 @@ public extension Date {
     /// - Parameters:
     ///   - component: component type.
     ///   - value: multiples of compnenet to add.
-    public mutating func add(_ component: Calendar.Component, value: Int) {
+    mutating func add(_ component: Calendar.Component, value: Int) {
         switch component {
         case .second:
             self = calendar.date(byAdding: .second, value: value, to: self) ?? self
@@ -241,7 +241,7 @@ public extension Date {
     ///   - component: component type.
     ///   - value: multiples of compnenets to add.
     /// - Returns: original date + multiples of compnenet added.
-    public func adding(_ component: Calendar.Component, value: Int) -> Date {
+    func adding(_ component: Calendar.Component, value: Int) -> Date {
         switch component {
         case .second:
             return calendar.date(byAdding: .second, value: value, to: self) ?? self
@@ -275,7 +275,7 @@ public extension Date {
     ///   - component: component type.
     ///   - value: new value of compnenet to change.
     /// - Returns: original date + multiples of compnenets added.
-    public func changing(_ component: Calendar.Component, value: Int) -> Date {
+    func changing(_ component: Calendar.Component, value: Int) -> Date {
         switch component {
         case .second:
             var date = self
@@ -316,7 +316,7 @@ public extension Date {
     ///
     /// - Parameter component: calendar component to get date at the beginning of.
     /// - Returns: date at the beginning of calendar component (if applicable).
-    public func beginning(of component: Calendar.Component) -> Date? {
+    func beginning(of component: Calendar.Component) -> Date? {
         switch component {
         case .second:
             return calendar.date(from: calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: self))
@@ -348,7 +348,7 @@ public extension Date {
     ///
     /// - Parameter component: calendar component to get date at the end of.
     /// - Returns: date at the end of calendar component (if applicable).
-    public func end(of component: Calendar.Component) -> Date? {
+    func end(of component: Calendar.Component) -> Date? {
         switch component {
         case .second:
             var date = self.adding(.second, value: 1)
@@ -425,7 +425,7 @@ public extension Date {
     ///
     /// - Parameter style: DateFormatter style (default is .medium)
     /// - Returns: date and time string
-    public func dateTimeString(ofStyle style: DateFormatter.Style = .medium) -> String {
+    func dateTimeString(ofStyle style: DateFormatter.Style = .medium) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = style
         dateFormatter.dateStyle = style
@@ -436,7 +436,7 @@ public extension Date {
     ///
     /// - Parameter component: calendar componenet to check.
     /// - Returns: true if date is in current given calendar component.
-    public func isInCurrent(_ component: Calendar.Component) -> Bool {
+    func isInCurrent(_ component: Calendar.Component) -> Bool {
         switch component {
         case .second:
             return second == Date().second && minute == Date().minute && hour == Date().hour && day == Date().day
@@ -473,7 +473,7 @@ public extension Date {
     }
     
     /// Time string from date
-    public func timeString(ofStyle style: DateFormatter.Style = .medium) -> String {
+    func timeString(ofStyle style: DateFormatter.Style = .medium) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = style
         dateFormatter.dateStyle = .none
@@ -499,7 +499,7 @@ public extension Date {
     ///   - minute: Minute (default is current minute).
     ///   - second: Second (default is current second).
     ///   - nanosecond: Nanosecond (default is current nanosecond).
-    public init(
+    init(
         calendar: Calendar? = Calendar.current,
         timeZone: TimeZone? = TimeZone.current,
         era: Int? = Date().era,
@@ -583,5 +583,9 @@ public extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
+    }
+    
+    func toNepaliDate() -> DateModel? {
+        return DateConverter().getNepaliDate(englishDate: DateModel(year: self.year, month: self.month, day: self.day))
     }
 }

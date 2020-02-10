@@ -44,9 +44,11 @@ class ViewController: UIViewController {
 //        self.showDatePicker(title: "To Date") { (date) in
 //            self.selectedDateLabel.text = date.dateString(ofStyle: .long)
 //        }
-        self.showNepaliDatePicker(title: "Select Date", message: nil) {
-            print("\($0)/\($1)")
-        }
+//        self.showNepaliDatePicker(title: "Select Date", message: nil) {
+//            print("\($0)/\($1)")
+//        }
+        
+        print(DateConverter().getNepaliDate(englishDate: DateModel(year: Date().year, month: Date().month, day: Date().day)))
     }
     
     @objc
