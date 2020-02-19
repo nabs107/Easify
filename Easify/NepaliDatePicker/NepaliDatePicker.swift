@@ -65,7 +65,13 @@ class NepaliDatePicker: UIView {
             self.datePicker.heightAnchor.constraint(equalToConstant: 216)
         ])
         
-        self.datePicker.selectRow(self.currentYearInEnglish % 100 + 56, inComponent: 0, animated: false)
+        let currentEnglishDate = Date()
+        let currentNepaliDate = DateConverter().getNepaliDate(englishDate: DateModel(year: currentEnglishDate.year, month: currentEnglishDate.month, day: currentEnglishDate.day))
+        if let currentNepaliDate = currentNepaliDate {
+            self.datePicker.selectRow(currentNepaliDate.year % 100, inComponent: 0, animated: false)
+            self.datePicker.selectRow(currentNepaliDate.month - 1, inComponent: 1, animated: false)
+            self.datePicker.selectRow(currentNepaliDate.day - 1, inComponent: 2, animated: false)
+        }
         
         //setup initially selected date
         let selectedYearRow = self.datePicker.selectedRow(inComponent: 0)
@@ -117,8 +123,8 @@ extension NepaliDatePicker: UIPickerViewDelegate, UIPickerViewDataSource {
             break
         }
         guard let selectedYear = self.selectedYear, let selectedMonth = self.selectedMonth, let selectedDay = self.selectedDay else {return}
-        let correspondingEnglishDate = BSToADConverter(year: selectedYear, month: selectedMonth, day: selectedDay)
-        self.action?(NepaliDate(year: selectedYear.description, month: selectedMonth.description, day: selectedDay.description), correspondingEnglishDate)
+        let correspondingEnglishDate = DateConverter().getEnglishDate(nepaliDate: DateModel(year: selectedYear, month: selectedMonth, day: selectedDay))
+        self.action?(NepaliDate(year: selectedYear.description, month: String(format: "%02d", selectedMonth), day: String(format: "%02d", selectedDay)), correspondingEnglishDate)
     }
     
     func BSToADConverter(year: Int, month: Int, day: Int) -> Date? {

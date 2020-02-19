@@ -585,7 +585,11 @@ public extension Date {
         return dateFormatter.string(from: self)
     }
     
-    func toNepaliDate() -> DateModel? {
-        return DateConverter().getNepaliDate(englishDate: DateModel(year: self.year, month: self.month, day: self.day))
+    func toNepaliDate() -> NepaliDate? {
+        let convertedDate = DateConverter().getNepaliDate(englishDate: DateModel(year: self.year, month: self.month, day: self.day))
+        if let year = convertedDate?.year, let month = convertedDate?.month, let day = convertedDate?.day {
+            return NepaliDate(year: year.description, month: String(format: "%02d", month), day: String(format: "%02d", day))
+        }
+        return nil
     }
 }

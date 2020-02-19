@@ -89,7 +89,7 @@ public class DateConverter {
     ///
     /// - Parameter nepaliDate: Date model for Nepali Date
     /// - Returns: Returns DateModel object of English Date if conversion is success. Else returns nil
-    public func getEnglishDate(nepaliDate: DateModel) -> DateModel? {
+    public func getEnglishDate(nepaliDate: DateModel) -> Date? {
         
         guard isNepaliDateWithinRange(date: nepaliDate) else {
             return nil
@@ -116,7 +116,7 @@ public class DateConverter {
                     
                     let components = calendar.dateComponents([.day,.month,.year], from: date)
                     
-                    return DateModel(year: components.year!, month: components.month!, day: components.day!)
+                    return Calendar.current.date(from: DateComponents(year: components.year!, month: components.month!, day: components.day!))
                     
                 } else {
                     days += nepaliDateMap[i][j]
