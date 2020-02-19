@@ -13,7 +13,7 @@ public struct NepaliDate {
     public let month: String
     public let day: String
     
-    init(year: String, month: String, day: String) {
+    public init(year: String, month: String, day: String) {
         self.year = year
         self.month = month
         self.day = day
