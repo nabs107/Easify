@@ -55,6 +55,10 @@ class ViewController: UIViewController {
 //        print("2075".unicoded())
         
         print(Date().toNepaliDate())
+        
+        self.showTimePicker { (date) in
+            print(date)
+        }
     }
     
     @objc
