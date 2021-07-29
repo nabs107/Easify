@@ -1,31 +1,31 @@
 PODS:
-  - Easify (1.0.1)
+  - Easify (1.0.3)
   - HandyJSON (5.0.1)
   - LBTATools (1.0.12)
   - RxSwift (5.0.1)
 
 DEPENDENCIES:
-  - Easify (from `/Users/me/Desktop/demo/Easify`)
+  - Easify (from `../Easify`)
   - HandyJSON
   - LBTATools
   - RxSwift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - HandyJSON
     - LBTATools
     - RxSwift
 
 EXTERNAL SOURCES:
   Easify:
-    :path: "/Users/me/Desktop/demo/Easify"
+    :path: "../Easify"
 
 SPEC CHECKSUMS:
-  Easify: 3ae161571c21aa6bb81a522d6141ee6f0a25e04d
+  Easify: 6a788daf4ac1b3937b202d54d01d96bd4e4f68dd
   HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
   LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 60ff75ccbcbca80576522a1b9ba0342bc6f3eb32
+PODFILE CHECKSUM: a8340b5a2b6e1926393ce4b0d3e34e53e00ff68b
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.10.1

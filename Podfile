@@ -17,5 +17,5 @@ target 'EasifyExamples' do
 
   # Pods for EasifyExamples
   pod 'LBTATools'
-  pod 'Easify', :path => '/Users/me/Desktop/demo/Easify'
+  pod 'Easify', :path => '../Easify'
 end
