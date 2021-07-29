@@ -30,7 +30,7 @@ public struct DateModel: CustomStringConvertible, Equatable {
 
 public class DateConverter {
     
-    public final let startNepaliDate = DateModel(year: 2000, month: 01, day: 01)
+    public final let startNepaliDate = DateModel(year: 1990, month: 01, day: 01)
     public final let endNepaliDate = DateModel(year: 2090, month: 12, day: 30)
     
     public final let startEnglishDate = DateModel(year: 1943, month: 04, day: 14)
@@ -224,6 +224,16 @@ public class DateConverter {
     /// Nepali Date Information used for conversion
     private let nepaliDateMap: [[Int]] =
         [
+            [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
+            [31, 32, 31, 32, 31, 30, 30, 29, 30, 29, 30, 30],
+            [31, 32, 31, 32, 31, 30, 30, 30, 29, 30, 29, 31],
+            [31, 31, 31, 32, 31, 31, 30, 29, 30, 29, 30, 30],
+            [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
+            [31, 32, 31, 32, 31, 30, 30, 30, 29, 29, 30, 30],
+            [31, 32, 31, 32, 31, 30, 30, 30, 29, 30, 29, 31],
+            [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
+            [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
+            [31, 32, 31, 32, 31, 30, 30, 30, 29, 29, 30, 31],
             [30, 32, 31, 32, 31, 30, 30, 30, 29, 30, 29, 31],
             [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
             [31, 31, 32, 32, 31, 30, 30, 29, 30, 29, 30, 30],
@@ -315,5 +325,5 @@ public class DateConverter {
             [30, 31, 32, 32, 30, 31, 30, 30, 29, 30, 30, 30],
             [30, 32, 31, 32, 31, 30, 30, 30, 29, 30, 30, 30],
             [30, 32, 31, 32, 31, 30, 30, 30, 29, 30, 30, 30]
-    ]
+        ]
 }
